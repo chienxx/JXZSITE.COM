@@ -1,9 +1,9 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: '字不如其名',
+  title: '字不如其人',
   author: '结弦奏',
-  headerTitle: '字不如其名',
-  description: 'A blog created with Next.js and Tailwind.css',
+  headerTitle: '字不如其人',
+  description: '记录一些个人的兴趣爱好和技术分享',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
