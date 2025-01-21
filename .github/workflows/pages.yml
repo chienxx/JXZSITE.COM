@@ -23,7 +23,7 @@ jobs:
       - run: yarn
       - run: yarn build
       - name: deploy with ssh
-        uses: Jump2nj/nextjs-blog@master
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
