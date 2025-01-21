@@ -17,6 +17,7 @@ const siteMetadata = {
   github: 'https://github.com/Jump2nj',
   spotify: 'https://open.spotify.com/user/31e2umgbxsh6kjdd4vzmex6uggk4',
   discord: 'https://discord.com/users/1028547869998841876',
+  twitter: 'https://x.com/',
   locale: 'en-US',
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
