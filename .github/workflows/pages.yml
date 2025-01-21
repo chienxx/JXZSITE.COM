@@ -3,7 +3,7 @@ name: Deploy Next.js App
 
 on:
   push:
-    branches: main
+    branches: master
 
 jobs:
   build:
@@ -21,10 +21,10 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}-
-      - run: yarn install --frozen-lockfile
+      - run: yarn
       - run: yarn build
       - name: deploy with ssh
-        uses: appleboy/ssh-action@master
+        uses: Jump2nj/nextjs-blog@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
@@ -32,7 +32,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd /root/apps/nextjs-blog
-            git pull origin main
+            git pull origin master
             rm -rf .next
-            yarn install --frozen-lockfile
+            yarn
             yarn build
