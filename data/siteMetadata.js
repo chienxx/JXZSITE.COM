@@ -12,6 +12,7 @@ const siteMetadata = {
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
+  socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   email: 'lancertut@yahoo.com',
   github: 'https://github.com/Jump2nj',
   spotify: 'https://open.spotify.com/user/31e2umgbxsh6kjdd4vzmex6uggk4',
