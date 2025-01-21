@@ -12,7 +12,6 @@ export function Github(svgProps: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-
 export function Mail(svgProps: SVGProps<SVGSVGElement>) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" {...svgProps}>
@@ -22,7 +21,6 @@ export function Mail(svgProps: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-
 export function Discord(svgProps: SVGProps<SVGSVGElement>) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...svgProps}>
@@ -31,7 +29,6 @@ export function Discord(svgProps: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-
 export function Spotify(svgProps: SVGProps<SVGSVGElement>) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...svgProps}>
@@ -40,8 +37,6 @@ export function Spotify(svgProps: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-
-
 export function Twitter(svgProps: SVGProps<SVGSVGElement>) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...svgProps}>
