@@ -3,6 +3,7 @@ import {
   Github,
   Discord,
   Spotify,
+  Twitter,
 } from './icons'
 
 const components = {
@@ -10,6 +11,7 @@ const components = {
   github: Github,
   discord: Discord,
   spotify: Spotify,
+  twitter: Twitter,
 }
 
 type SocialIconProps = {
