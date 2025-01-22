@@ -26,6 +26,7 @@ jobs:
           EXPORT: 1
           UNOPTIMIZED: 1
           BASE_PATH: /$GITHUB_WORKSPACE
+          OUTPUT: /home/runner/work/nextjs-blog/nextjs-blog
 
   deploy:
     needs: build
@@ -36,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-app
-          path: /home/runner/work/nextjs-blog/nextjs-blog/*
+          path: /home/runner/work/nextjs-blog/nextjs-blog/
       - name: download build files
         uses: actions/download-artifact@v4
         with:
