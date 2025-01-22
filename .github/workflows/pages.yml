@@ -22,13 +22,12 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}-
       - run: yarn
       - run: yarn build
-      - name: compress build files
-        run: tar -czf build.tar.gz .next public package.json yarn.lock
+      - run: yarn export
       - name: upload build files
         uses: actions/upload-artifact@v4
         with:
           name: build-app
-          path: /app/build.tar.gz
+          path: ./out
 
   deploy:
     needs: build
@@ -42,7 +41,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
-          source: /app/build.tar.gz
+          source: ./out/*
           target: /root/apps/nextjs-blog/deploy
       - name: deploy with ssh
         uses: appleboy/ssh-action@master
@@ -56,7 +55,7 @@ jobs:
             cd /root/apps/nextjs-blog
             git pull origin master
             pm2 delete nextjs-blog || true
-            rm -rf .next public package.json yarn.lock
-            tar -xzf /root/apps/nextjs-blog/deploy/build.tar.gz -C /root/apps/nextjs-blog
+            # rm -rf .next public package.json yarn.lock
+            mv /root/apps/nextjs-blog/deploy/*  /root/apps/nextjs-blog
             pm2 start yarn --name "nextjs-blog" -- start
             pm2 save
