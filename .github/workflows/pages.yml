@@ -21,7 +21,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}-
       - name: base path
-        run: echo "BASE_PATH is $GITHUB_WORKSPACE"
+        run: |
+          BASE_PATH="${GITHUB_WORKSPACE}/basePath"
+          echo "BASE_PATH=$BASE_PATH"
       - name: Get current working directory
         run: pwd  
       - run: yarn
