@@ -24,11 +24,11 @@ jobs:
       - run: yarn build
       - name: compress build files
         run: tar -czf build.tar.gz .next public package.json yarn.lock
-      # - name: upload build files
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: build-app
-      #     path: build.tar.gz
+      - name: upload build files
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-app
+          path: build.tar.gz
 
   deploy:
     needs: build
