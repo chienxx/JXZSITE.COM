@@ -10,16 +10,14 @@ jobs:
     timeout-minutes: 15
     steps:
       - name: deploy with ssh
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
-          envs: |
-            PATH: ${{ secrets.PATH }}
           script: |
-            cd PATH
+            cd ${{ secrets.PATH }}
             git pull origin master
             pm2 delete nextjs-blog || true
             yarn
