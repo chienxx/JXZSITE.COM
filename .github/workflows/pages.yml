@@ -17,7 +17,7 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            cd /root/apps/nextjs-blog
+            cd ${{ secrets.PATH }}
             git pull origin master
             pm2 delete nextjs-blog || true
             yarn
