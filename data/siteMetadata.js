@@ -1,12 +1,9 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: '字不如其人 - 技术交流和日常分享',
+  title: '字不如其人',
   author: '结弦奏',
   headerTitle: '字不如其人',
-  description: '我的名字源自于我看过的第一部日漫《Angel Beats!》🎬，其中的男女主角——音无结弦和立华奏给我留下了深刻的印象。作为一名 Java 开发工程师👨‍💻，我也接触过一些前端开发，算是“半个全栈”。\
-                羽毛球是我的爱好，曾经的我起高就杀🏸，受过几次伤后已老实，主打养生🧘‍♂️。偶尔我也玩玩客制化键盘⌨️，虽然只组过六七把键盘，只能算半入门水平，但自认为在润P卫上小有天赋🌟。\
-                我还特别热爱经典老歌，这很大程度上是受到了我的音乐“老炮”父亲👨的影响。每当放学回家，家里就回荡着他用 VCD 播放的70~90年代的流行歌曲📀。因此，尽管身为90后，别人的青春里住着一个周杰伦，而我的青春里则住着张信哲，\
-                也难怪我听到“爱如潮水”时，比听到“夜曲”更容易激动🤣。' ,
+  description: '关于生活和科技领域的闲聊' ,
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
