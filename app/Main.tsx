@@ -16,7 +16,7 @@ export default function Home({ posts }) {
           <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
             👋，我是{' '}
             <span className="dark:from-secondary-700 dark:to-secondary-400 mt-10 bg-gradient-to-r from-primary-700 to-primary-400 bg-clip-text text-center text-4xl font-extrabold tracking-tight text-transparent sm:text-5xl lg:text-6xl">
-              结弦奏
+              结弦奏{' '}
             </span>
           </h1>
           <div className="dark:text-grey text-gray mb-8  mt-4 text-base">
