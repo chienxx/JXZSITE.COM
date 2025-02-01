@@ -31,8 +31,6 @@ export default function Home({ posts }) {
               <span className="mr-3 inline-block whitespace-nowrap pt-3">🐜 RabbitMQ</span>
               <span className="mr-3 inline-block whitespace-nowrap pt-3">🕰️ Git</span>
               <span className="mr-3 inline-block whitespace-nowrap pt-3">🚃 Kafka</span>
-              <span className="mr-3 inline-block whitespace-nowrap pt-3">⏳ Elasticsearch</span>
-              <span className="mr-3 inline-block whitespace-nowrap pt-3">🍡 RabbitMQ</span>
               <span className="mr-3 inline-block whitespace-nowrap pt-3">🤖 OpenAI</span>
               <span className="mr-3 inline-block whitespace-nowrap pt-3">📦 ClickHouse</span>
               <span className="mr-3 inline-block whitespace-nowrap pt-3">🧱 Docker</span>

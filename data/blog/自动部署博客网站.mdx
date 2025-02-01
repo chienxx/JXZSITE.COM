@@ -1,0 +1,39 @@
+---
+title: 'Github Actions 部署 Next.js 项目到VPS'
+date: '2025-01-07'
+tags: ['next-js', 'guide']
+draft: false
+summary: 'Deploy Next.js to VPS using Github Actions'
+layout: PostLayout
+---
+
+> [!TIP]
+> 本教程将指导你通过`GitHub Actions`自动构建`Next.js`[博客项目](https://github.com/timlrx/tailwind-nextjs-starter-blog)并部署到指定服务器，
+轻松搭建完全属于你自己的个人博客网站。
+
+## 服务器环境配置
+- 服务器生成密钥远程连接GitHub
+```bash
+ssh-keygen -t rsa -b 4096 -C "你的邮箱地址"
+```
+生成后的公钥和私钥被保存在了服务器的：`/root/.ssh`路径下，一般来说生成的文件名为：`id_rsa、id_rsa.pub`
+- 安装Git，Node，Npm，yarn，Pm2
+```bash
+apt-get update
+apt-get install git
+#该博客项目使用node20.x版本
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+apt install -y nodejs
+npm install -g yarn
+npm install -g pm2 
+```
+- 克隆项目
+```bash
+git clone https://github.com/timlrx/tailwind-nextjs-starter-blog
+```
+## GitHub参数配置
+
+
+
+
+
