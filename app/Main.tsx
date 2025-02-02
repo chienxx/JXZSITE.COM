@@ -35,6 +35,7 @@ export default function Home({ posts }) {
               <span className="mr-3 inline-block whitespace-nowrap pt-3">📦 ClickHouse</span>
               <span className="mr-3 inline-block whitespace-nowrap pt-3">🧱 Docker</span>
               <span className="mr-3 inline-block whitespace-nowrap pt-3">🏕️ Flink</span>
+              <span className="mr-3 inline-block whitespace-nowrap pt-3">📝 Filebeat</span>
               <span className="mr-3 inline-block whitespace-nowrap pt-3">🔔 Nacos</span>
               <span className="mr-3 inline-block whitespace-nowrap pt-3">🎉 Nginx</span>
               <span className="mr-3 inline-block whitespace-nowrap pt-3">🎃 Linux</span>
