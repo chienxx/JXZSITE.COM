@@ -1,8 +1,8 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: '字不如其人',
+  title: 'X21 Dev Blog',
   author: '结弦奏',
-  headerTitle: '字不如其人',
+  headerTitle: 'X21 Dev Blog',
   description: '关于生活和科技领域的闲聊' ,
   language: 'en-us',
   theme: 'system', // system, dark or light
