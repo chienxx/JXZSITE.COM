@@ -92,7 +92,7 @@ ufw enable
   ```
 - 手机端下载安装 `Google Authenticator` 应用
 - 服务端执行 `google-authenticator` 后出现 `Do you want authentication tokens to be time-based (y/n)` ,输入y 后保存秘钥和通用验证码
-- 手机端扫描二维码保存信息
+- 手机端扫描二维码保存信息，会生成动态验证码
 - 服务端开启二次验证
 
   - 编辑 `sshd` 文件
@@ -120,6 +120,9 @@ ufw enable
   ```bash
   service ssh restart
   ```
+  - 验证码二次验证
+  ![auth](http://image.jxzsite.com/i/2025/02/07/ssqgg7.png)
+
 _**通过以上设置，可以大大提高你的 VPS 安全性，防止未经授权的访问和攻击。**_
 
 ## 安装 Docker 和 Docker Compose
