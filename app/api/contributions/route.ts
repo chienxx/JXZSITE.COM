@@ -29,7 +29,7 @@ const themes = [
     try {
       const randomTheme = themes[Math.floor(Math.random() * themes.length)]
   
-      const res = await fetch(`https://www.gitch.art/api/og/Jump2nj?color=${randomTheme.color}`, {
+      const res = await fetch(`https://www.gitch.art/api/og/chienxx?color=${randomTheme.color}`, {
         headers: {
           'Content-Type': 'image/svg+xml',
         },

@@ -11,7 +11,7 @@ const siteMetadata = {
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   email: 'lancertut@yahoo.com',
-  github: 'https://github.com/Jump2nj',
+  github: 'https://github.com/chienxx',
   spotify: 'https://open.spotify.com/user/31e2umgbxsh6kjdd4vzmex6uggk4',
   discord: 'https://discord.com/users/1028547869998841876',
   twitter: 'https://x.com/',
