@@ -18,6 +18,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd ${{ secrets.PATH }}
+            git checkout -- app/tag-data.json
             git pull origin master
             pm2 delete nextjs-blog || true
             yarn
