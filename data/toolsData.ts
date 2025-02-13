@@ -1,4 +1,4 @@
-interface App {
+interface Tool {
   title: string
   category: string
   description: string
@@ -6,35 +6,35 @@ interface App {
   href?: string
 }
 
-const appsData: App[] = [
+const toolsData: Tool[] = [
   {
     title: 'Notion',
-    category: 'tech',
+    category: 'iOS',
     description: `Automatically track your sleep from your Apple Watch.`,
     imgSrc: 'https://www.notion.so/images/favicon.ico',
     href: 'https://www.notion.so',
   },
   {
     title: 'Slack',
-    category: 'tech',
+    category: 'macOS',
     description: `Automatically track your sleep from your Apple Watch.`,
     imgSrc: 'https://www.notion.so/images/favicon.ico',
     href: 'https://slack.com',
   },
   {
     title: 'GitHub',
-    category: 'tech',
+    category: 'macOS',
     description: `Automatically track your sleep from your Apple Watch.`,
     imgSrc: 'https://www.notion.so/images/favicon.ico',
     href: 'https://github.com',
   },
   {
     title: 'Trello',
-    category: 'life',
+    category: 'Web',
     description: `Automatically track your sleep from your Apple Watch.`,
     imgSrc: 'https://www.notion.so/images/favicon.ico',
     href: 'https://trello.com',
   },
 ]
 
-export default appsData
+export default toolsData
