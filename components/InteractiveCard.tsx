@@ -38,7 +38,8 @@ const InteractiveCard = ({ title, description, imgSrc, href }) => (
             className="text-base font-medium leading-6 text-teal-600 hover:text-teal-700 dark:text-teal-400 dark:hover:text-teal-500"
             aria-label={`Link to ${title}`}
           >
-            Learn more &rarr;
+           
+           
           </Link>
         )}
       </div>
