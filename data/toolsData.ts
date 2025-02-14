@@ -13,7 +13,7 @@ const toolsData: Tool[] = [
     title: 'AutoSleep',
     category: 'iOS',
     label: 'SLEEP',
-    description: `Automatically track your sleep from your Apple Watch.`,
+    description: 'Automatically track your sleep from your Apple Watch.',
     imgSrc: 'https://www.notion.so/images/favicon.ico',
     href: 'https://www.notion.so',
   },
@@ -28,7 +28,7 @@ const toolsData: Tool[] = [
   {
     title: 'Spotify',
     category: 'iOS',
-    label: 'STREAMING-MEDIA-PLATFORM',
+    label: 'STREAMING-MEDIA',
     description: `Automatically track your sleep from your Apple Watch.`,
     imgSrc: 'https://www.notion.so/images/favicon.ico',
     href: 'https://github.com',
@@ -96,7 +96,7 @@ const toolsData: Tool[] = [
   {
     title: 'GitHub',
     category: 'Web',
-    label: 'CODE-HOSTING-PLATFORM',
+    label: 'CODE-HOSTING',
     description: `Automatically track your sleep from your Apple Watch.`,
     imgSrc: 'https://www.notion.so/images/favicon.ico',
     href: 'https://trello.com',
