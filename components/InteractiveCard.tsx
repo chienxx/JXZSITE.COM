@@ -1,9 +1,6 @@
 import Image from './Image'
 import Link from './Link'
 
-
-
-
 const InteractiveCard = ({ title, description, imgSrc, href, label }) => (
   <div className="group w-full transform p-6 transition-transform duration-300 ease-in-out hover:scale-105 sm:w-1/2">
     <div className="relative overflow-hidden rounded-lg border border-gray-300 bg-white shadow-lg transition-shadow duration-300 dark:border-gray-600 dark:bg-gray-800">

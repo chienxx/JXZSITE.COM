@@ -10,9 +10,9 @@ const LabelSwitcher = () => {
   const filteredTools = toolsData.filter((tool) => tool.category === activeTab)
 
   return (
-    <div className="container mx-auto py-12">
+    <div className="container mx-auto py-10">
       <div className="mb-8 text-center">
-        <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-10 md:text-6xl md:leading-14">
+        <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
           Tools
         </h1>
         <p className="mt-4 text-lg leading-7 text-gray-500 dark:text-gray-400">
@@ -63,8 +63,8 @@ const LabelSwitcher = () => {
           Web
         </button>
       </div>
-      <div className="container py-12">
-        <div className="-m-4 flex flex-wrap">
+      <div className="container py-2">
+        <div className="-m-4 flex flex-wrap ">
           {filteredTools.map((tool) => (
             <InteractiveCard
               key={tool.label}
