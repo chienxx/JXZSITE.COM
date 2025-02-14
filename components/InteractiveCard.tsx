@@ -1,6 +1,9 @@
 import Image from './Image'
 import Link from './Link'
 
+
+
+
 const InteractiveCard = ({ title, description, imgSrc, href, label }) => (
   <div className="group w-full transform p-6 transition-transform duration-300 ease-in-out hover:scale-105 sm:w-1/2">
     <div className="relative overflow-hidden rounded-lg border border-gray-300 bg-white shadow-lg transition-shadow duration-300 dark:border-gray-600 dark:bg-gray-800">
@@ -8,7 +11,7 @@ const InteractiveCard = ({ title, description, imgSrc, href, label }) => (
         {/* Left - Image */}
         {imgSrc && (
           <Link href={href || '#'}>
-            <div className="block h-20 w-20 overflow-hidden rounded-lg transition-transform duration-300 ease-in-out">
+            <div className="block h-20 w-20 overflow-hidden rounded-lg transition-transform duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
               <Image
                 alt={title}
                 src={imgSrc}
@@ -23,11 +26,11 @@ const InteractiveCard = ({ title, description, imgSrc, href, label }) => (
         {/* Right - Content */}
         <div className="flex w-full flex-col justify-center space-y-4">
           <Link href={href || '#'}>
-            <div className="block text-lg font-semibold text-gray-900 transition-colors duration-300 dark:text-gray-100">
-              {title}
+            <div className="block text-lg font-semibold text-gray-900 transition-colors duration-300 dark:text-gray-100 hover:text-green-500 dark:hover:text-green-500">
+              <span className="hover:underline">{title}</span>
             </div>
           </Link>
-          <p className="text-sm text-gray-700 transition-colors duration-300 dark:text-gray-400">
+          <p className="text-sm text-gray-700 transition-colors duration-300 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-gray-200">
             {description}
           </p>
         </div>
@@ -43,6 +46,8 @@ const InteractiveCard = ({ title, description, imgSrc, href, label }) => (
       )}
     </div>
   </div>
-)
+);
+
+
 
 export default InteractiveCard
