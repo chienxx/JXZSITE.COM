@@ -63,16 +63,19 @@ const LabelSwitcher = () => {
           Web
         </button>
       </div>
-      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {filteredTools.map((tool) => (
-          <InteractiveCard
-            key={tool.title}
-            title={tool.title}
-            description={tool.description}
-            imgSrc={tool.imgSrc}
-            href={tool.href}
-          />
-        ))}
+      <div className="container py-12">
+        <div className="-m-4 flex flex-wrap">
+          {filteredTools.map((tool) => (
+            <InteractiveCard
+              key={tool.label}
+              title={tool.title}
+              description={tool.description}
+              imgSrc={tool.imgSrc}
+              href={tool.href}
+              label={tool.label}
+            />
+          ))}
+        </div>
       </div>
     </div>
   )

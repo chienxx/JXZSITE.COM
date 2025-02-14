@@ -1,48 +1,46 @@
 import Image from './Image'
 import Link from './Link'
 
-const InteractiveCard = ({ title, description, imgSrc, href }) => (
-  <div className="md max-w-[544px] p-4 md:w-1/2">
-    <div
-      className={`${
-        imgSrc && 'h-full'
-      } overflow-hidden rounded-lg border border-gray-300 dark:border-gray-600 transition-transform duration-500 hover:scale-105 hover:shadow-xl bg-gradient-to-br from-white to-gray-100 dark:from-gray-800 dark:to-gray-900`}
-    >
-      {imgSrc && (
-        <div className="relative">
-          <Image
-            alt={title}
-            src={imgSrc}
-            className="object-cover object-center w-full h-48 rounded-t-lg"
-            width={544}
-            height={306}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-            <p className="text-white text-center px-4">{description}</p>
-          </div>
-        </div>
-      )}
-      <div className="p-6">
-        <h2 className="mb-2 text-xl font-semibold leading-8 tracking-tight text-gray-900 dark:text-gray-100">
-          {href ? (
-            <Link href={href} aria-label={`Link to ${title}`}>
-              {title}
-            </Link>
-          ) : (
-            title
-          )}
-        </h2>
-        {href && (
-          <Link
-            href={href}
-            className="text-base font-medium leading-6 text-teal-600 hover:text-teal-700 dark:text-teal-400 dark:hover:text-teal-500"
-            aria-label={`Link to ${title}`}
-          >
-           
-           
+const InteractiveCard = ({ title, description, imgSrc, href, label }) => (
+  <div className="group w-full transform p-6 transition-transform duration-300 ease-in-out hover:scale-105 sm:w-1/2">
+    <div className="relative overflow-hidden rounded-lg border border-gray-300 bg-white shadow-lg transition-shadow duration-300 dark:border-gray-600 dark:bg-gray-800">
+      <div className="flex items-center space-x-6 p-6">
+        {/* Left - Image */}
+        {imgSrc && (
+          <Link href={href || '#'}>
+            <div className="block h-20 w-20 overflow-hidden rounded-lg transition-transform duration-300 ease-in-out">
+              <Image
+                alt={title}
+                src={imgSrc}
+                className="h-full w-full object-cover object-center"
+                width={80}
+                height={80}
+              />
+            </div>
           </Link>
         )}
+
+        {/* Right - Content */}
+        <div className="flex w-full flex-col justify-center space-y-4">
+          <Link href={href || '#'}>
+            <div className="block text-lg font-semibold text-gray-900 transition-colors duration-300 dark:text-gray-100">
+              {title}
+            </div>
+          </Link>
+          <p className="text-sm text-gray-700 transition-colors duration-300 dark:text-gray-400">
+            {description}
+          </p>
+        </div>
       </div>
+
+      {/* Label with dynamic effect */}
+      {label && (
+        <div className="absolute right-4 top-4">
+          <span className="inline-block rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-500 transition-all duration-300 group-hover:scale-110 group-hover:bg-green-200 dark:bg-green-900 dark:text-green-400 dark:group-hover:bg-green-800">
+            {label}
+          </span>
+        </div>
+      )}
     </div>
   </div>
 )
