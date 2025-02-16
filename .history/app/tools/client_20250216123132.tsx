@@ -63,7 +63,7 @@ const LabelSwitcher = () => {
           Web
         </button>
       </div>
-      <div className="container py-6">
+      <div className="container py-2">
         <div className="-m-4 flex flex-wrap ">
           {filteredTools.map((tool) => (
             <InteractiveCard
