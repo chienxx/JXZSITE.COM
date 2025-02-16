@@ -86,6 +86,8 @@ rclone config
 
 ## 挂载 OneDrive 到 VPS
 
+> [!Note] **结合 [文章](https://blog.jxzsite.com/blog/guide/build-own-private-music-server) **
+
 ### 创建挂载点
 
 ```bash
@@ -116,7 +118,3 @@ rclone mount onedrive:/Music /apps/navidrome/music --vfs-cache-mode full --vfs-c
 
 使用 `df -h` 命令查看挂载情况
 ![df](http://image.jxzsite.com/i/2025/02/16/wcw0r1.png)
-
-## 总结
-
-通过使用 Rclone 挂载 OneDrive 云盘，我们可以有效地扩展 VPS 的存储空间，解决存储不足的问题。这种方法不仅简单易行，而且成本低廉，特别适合需要处理大量数据的应用场景。希望本文能帮助你顺利实现这一解决方案，提升 VPS 的使用体验。
