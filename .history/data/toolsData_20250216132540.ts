@@ -200,8 +200,8 @@ const toolsData: Tool[] = [
   {
     title: 'NodeSeek',
     category: 'Web',
-    label: 'QUALITY-COMMUNITY',
-    description: 'Create a high-quality community for hosting enthusiasts, delivering industry news and sharing technical insights.',
+    label: '',
+    description: '',
     imgSrc: '/static/images/tools/web/NodeSeek.png',
     href: 'https://www.nodeseek.com/',
   },
