@@ -11,7 +11,7 @@ const ContentSecurityPolicy = `
   style-src 'self' 'unsafe-inline';
   img-src * blob: data:;
   media-src *.s3.amazonaws.com;
-  connect-src * https://collect.jxzsite.com;
+  connect-src *;
   font-src 'self';
   frame-src giscus.app
 `
