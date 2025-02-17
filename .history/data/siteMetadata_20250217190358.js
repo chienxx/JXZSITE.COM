@@ -32,7 +32,6 @@ const siteMetadata = {
     plausibleAnalytics: {
       plausibleDataDomain: 'blog.jxzsite.com', // e.g. tailwind-nextjs-starter-blog.vercel.app
       src: '/js/script.js', // e.g. https://plausible.my-domain.com/js/script.js
-      dataApi: '/api/event',
     },
     // simpleAnalytics: {},
     // posthogAnalytics: {
