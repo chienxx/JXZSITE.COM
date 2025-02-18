@@ -30,8 +30,9 @@ const siteMetadata = {
     //   // Remember to add 'us.umami.is' in `next.config.js` as a permitted domain for the CSP
     // },
     plausibleAnalytics: {
-      plausibleDataDomain: 'blog.jxzsite.com',
+      plausibleDataDomain: 'blog.jxzsite.com ',
       src: 'https://collect.jxzsite.com/js/script.js',
+      dataApi: 'https://collect.jxzsite.com/api/event',
     },
     // simpleAnalytics: {},
     // posthogAnalytics: {
