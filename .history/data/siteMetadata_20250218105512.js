@@ -31,7 +31,7 @@ const siteMetadata = {
     // },
     plausibleAnalytics: {
       plausibleDataDomain: 'blog.jxzsite.com',
-      src: '/js/script.js',
+      src: 'https://collect.jxzsite.com/js/script.js',
     },
     // simpleAnalytics: {},
     // posthogAnalytics: {
