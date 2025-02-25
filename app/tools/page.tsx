@@ -1,5 +1,5 @@
 import { genPageMetadata } from 'app/seo'
-import LabelSwitcher from 'app/tools/client'
+import LabelSwitcher from './client'
 
 export const metadata = genPageMetadata({ title: 'Tools' })
 

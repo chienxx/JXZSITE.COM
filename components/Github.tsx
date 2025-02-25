@@ -29,8 +29,8 @@ const Github = () => {
   }
 
   return (
-    <div className="dark:text-grey text-gray flex flex-col items-center justify-center pb-4">
-      <p className="text-gray dark:text-gray text-xs leading-7 md:mt-5">
+    <div className="flex flex-col justify-center items-center dark:text-grey text-gray pb-4">
+      <p className="text-xs leading-7  text-gray dark:text-gray md:mt-5">
         <Link
           href="/about"
           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
